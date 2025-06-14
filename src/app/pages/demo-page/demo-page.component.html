@@ -1,0 +1,131 @@
+<app-page-header title="Live Demo" subtitle="Get to know the look and feel of Spectra"
+    imageSrc="/assets/backgrounds/liveDemo_background.webp"></app-page-header>
+
+<app-spacer></app-spacer>
+
+<!-- Intro + Icons -->
+<app-content-section>
+    <ng-template #content>
+        <div class="flex flex-row gap-8 w-3/5 justify-center">
+
+            <div class="w-1/2 self-center flex flex-col gap-4">
+                <h3 class="font-bold text-4xl">Try it out</h3>
+                <p class="text-2xl font-light">
+                    Spectra is a complex system that requires a lot of moving parts to work - so testing it and seeing
+                    what it looks like can be a hassle. We have created a live demo so it is quick and easy!</p>
+                <img src="assets/backgrounds/demo-pic-closeup2.webp" alt="Close-up picture of the demo" />
+                <a href="https://auto.valospectra.com/testing" target="_blank">
+                    <p-button label="Open Demo Mode" severity="primary" />
+                </a>
+
+            </div>
+
+            <!-- Grid Icons -->
+            <div class="w-1/2 self-center grid grid-cols-2 gap-6 my-8">
+
+                <div class="flex flex-row gap-1">
+                    <svg class="mr-3 w-25 h-fit" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 0 0 1 0V6.435l.106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 1 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.118a.5.5 0 0 1-.447-.276l-1.232-2.465-2.512-4.185a.517.517 0 0 1 .809-.631l2.41 2.41A.5.5 0 0 0 6 9.5V1.75A.75.75 0 0 1 6.75 1M8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v6.543L3.443 6.736A1.517 1.517 0 0 0 1.07 8.588l2.491 4.153 1.215 2.43A1.5 1.5 0 0 0 6.118 16h6.302a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5 5 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.6 2.6 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046zm2.094 2.025" />
+                    </svg>
+                    <div>
+                        <h3 class="mb-0 font-bold text-2xl">Interactive</h3>
+                        <p class="text-lg">See how it behaves in real time by the click of a button</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-1">
+                    <svg class="mr-3 w-25 h-fit" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M7.396 11V5.001H6.209v2.44H3.687V5H2.5v6h1.187V8.43h2.522V11zM8.5 5.001V11h2.188c1.811 0 2.685-1.107 2.685-3.015 0-1.894-.86-2.984-2.684-2.984zm1.187.967h.843c1.112 0 1.622.686 1.622 2.04 0 1.353-.505 2.02-1.622 2.02h-.843z" />
+                        <path
+                            d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
+                    </svg>
+                    <div>
+                        <h3 class="mb-0 font-bold text-2xl">1080p Resolution</h3>
+                        <p class="text-lg">Easily add it to your streaming software of choice using a browser source.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-1">
+                    <svg class="mr-3 w-50 h-fit" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M4.502 9a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3" />
+                        <path
+                            d="M14.002 13a2 2 0 0 1-2 2h-10a2 2 0 0 1-2-2V5A2 2 0 0 1 2 3a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v8a2 2 0 0 1-1.998 2M14 2H4a1 1 0 0 0-1 1h9.002a2 2 0 0 1 2 2v7A1 1 0 0 0 15 11V3a1 1 0 0 0-1-1M2.002 4a1 1 0 0 0-1 1v8l2.646-2.354a.5.5 0 0 1 .63-.062l2.66 1.773 3.71-3.71a.5.5 0 0 1 .577-.094l1.777 1.947V5a1 1 0 0 0-1-1z" />
+                    </svg>
+                    <div>
+                        <h3 class="mb-0 font-bold text-2xl">Different backgrounds</h3>
+                        <p class="text-lg">Get a feel how Spectra looks during the game. Or use the transparent
+                            background to see how it looks in your existing stream.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-row gap-1">
+                    <svg class="mr-3 w-25 h-fit" fill="currentColor" viewBox="0 0 16 16">
+                        <path
+                            d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0" />
+                        <path
+                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
+                    </svg>
+                    <div>
+                        <h3 class="mb-0 font-bold text-2xl">Up to date</h3>
+                        <p class="text-lg">Always includes the latest
+                            features and changes. What you see here is what you get!</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </ng-template>
+</app-content-section>
+
+<app-spacer></app-spacer>
+
+<!-- Video option -->
+<app-content-section>
+    <ng-template #content>
+        <div class="flex flex-row gap-12 w-3/5 justify-center">
+            <div class="w-1/2 flex flex-col justify-center">
+                <img class="w-full h-auto" src="assets/profile-pictures/underpeel-logo.webp" alt="Underpeel logo" />
+            </div>
+            <div class="flex flex-col gap-8 justify-center content-start w-1/2">
+                <h3 class="text-4xl font-bold">Underpeel Grand Finals</h3>
+                <p class="text-2xl font-light">Prefer a VOD? Check out the video below to see the overlay in action,
+                    live from the Underpeel Grand Finals!
+                    Because Spectra is still under development, the what you see in the video might not always be the
+                    most current version of the overlay.</p>
+                <div class="flex flex-row gap-4">
+                    <a href="https://youtu.be/VAAFiwqgxCA?t=4175" target="_blank">
+                        <p-button label="Watch VOD" severity="primary" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</app-content-section>
+
+<app-spacer></app-spacer>
+
+<!-- Convinced? -->
+<app-content-section>
+    <ng-template #content>
+        <div class="flex flex-row gap-12 w-3/5 justify-center">
+            <div class="flex flex-col gap-8 justify-center content-start text-center w-full">
+                <h3 class="text-4xl font-bold">Convinced?</h3>
+                <p class="text-2xl font-light">Simply contact us on our Discord server to get started with Spectra!
+                    We're always happy to help and can provide you with everything you need to get started right away.
+                    With ready to use servers in Europe and North America, we've got you covered no matter where you are
+                    - completely free of charge. If you prefer, you can even self-host Spectra - we provide all the
+                    necessary files on our GitHub repositories.</p>
+                <div class="flex flex-row gap-4 justify-center text-center">
+                    <a href="https://discord.gg/nWWXqqK6tz" target="_blank">
+                        <p-button label="Join the Discord Server" severity="primary" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ng-template>
+</app-content-section>

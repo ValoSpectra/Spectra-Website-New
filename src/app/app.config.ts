@@ -1,6 +1,5 @@
 import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
 import { provideRouter } from '@angular/router';
-import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { routes } from './app.routes';
 import {
   provideClientHydration,
@@ -15,7 +14,7 @@ export const appConfig: ApplicationConfig = {
     provideZoneChangeDetection({ eventCoalescing: true }),
     provideRouter(routes),
     provideClientHydration(withEventReplay(), withIncrementalHydration()),
-    provideAnimationsAsync(),
+    //provideAnimationsAsync(), //don't, angular want to use css animations going forward
     providePrimeNG({
       theme: {
         preset: primengTheme,
