@@ -57,7 +57,7 @@
           "configurations": {
             "production": {
               "security": {
-                "autoCsp": true
+                "autoCsp": false
               },
               "budgets": [
                 {

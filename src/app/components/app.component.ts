@@ -15,8 +15,6 @@ export class AppComponent {
 
   public get navbarAnimated(): boolean {
     const ret = this.route.snapshot.firstChild?.routeConfig?.path == '';
-    // console.log(ret);
-
     return ret;
   }
 }

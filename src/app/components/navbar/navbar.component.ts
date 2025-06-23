@@ -1,4 +1,4 @@
-import { AfterViewInit, booleanAttribute, Component, Input } from '@angular/core';
+import { AfterViewInit, booleanAttribute, Component, inject, Input } from '@angular/core';
 import { animate, JSAnimation, onScroll } from 'animejs';
 
 @Component({
