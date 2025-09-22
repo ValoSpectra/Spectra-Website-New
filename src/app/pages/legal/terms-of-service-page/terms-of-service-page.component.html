@@ -1,0 +1,33 @@
+<div class="flex flex-col w-full h-full justify-center items-center content-center gap-4">
+  <div class="text-2xl text-color mb-4">
+    Please select the language in which you want to view our Terms of Service
+  </div>
+  <div class="flex flex-row gap-4">
+    <p-button
+      (onClick)="openInNewTab('https://app.getterms.io/view/CTrRE/terms-of-service/en-us')"
+      label="English (US)"
+    ></p-button>
+    <p-button
+      (onClick)="openInNewTab('https://app.getterms.io/view/CTrRE/terms-of-service')"
+      label="English (UK)"
+    ></p-button>
+    <p-button
+      (onClick)="openInNewTab('https://app.getterms.io/view/CTrRE/terms-of-service/de')"
+      label="German"
+    ></p-button>
+  </div>
+  <div class="flex flex-row gap-4">
+    <p-button
+      (onClick)="openInNewTab('https://app.getterms.io/view/CTrRE/terms-of-service/es')"
+      label="Spanish"
+    ></p-button>
+    <p-button
+      (onClick)="openInNewTab('https://app.getterms.io/view/CTrRE/terms-of-service/it')"
+      label="Italian"
+    ></p-button>
+    <p-button
+      (onClick)="openInNewTab('https://app.getterms.io/view/CTrRE/terms-of-service/fr')"
+      label="French"
+    ></p-button>
+  </div>
+</div>

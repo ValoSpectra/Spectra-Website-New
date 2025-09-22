@@ -10,8 +10,8 @@ export const routes: Routes = [
   {
     path: '',
     component: MainPageComponent,
+    title: 'Spectra - Spectating Valorant',
     data: {
-      title: 'Spectra - Spectating Valorant',
       description:
         'Spectra is your all-in-one solution for an amazing looking Valorant Tournament Overlay, enabling all Organizers to display live game information.',
     },
@@ -19,8 +19,8 @@ export const routes: Routes = [
   {
     path: 'credits',
     component: CreditsPageComponent,
+    title: 'Spectra - Credits',
     data: {
-      title: 'Spectra - Credits',
       description:
         'Everyone who has contributed to Spectra in one way or another. Developers, Designers, and more.',
     },
@@ -28,8 +28,8 @@ export const routes: Routes = [
   {
     path: 'live-demo',
     component: DemoPageComponent,
+    title: 'Spectra - Live Demo',
     data: {
-      title: 'Spectra - Live Demo',
       description:
         'Learn more about the live demo for Spectra - created to test out Spectra functionality in a simple and intuitive way.',
     },
@@ -37,16 +37,43 @@ export const routes: Routes = [
   {
     path: 'download',
     component: DownloadPageComponent,
+    title: 'Spectra - Client Download',
     data: {
-      title: 'Spectra - Client Download',
       description: 'Download the latest version of the Spectra Client here.',
     },
   },
   {
-    path: 'imprint',
-    component: ImprintPageComponent,
-    data: {
-      title: 'Spectra - Imprint',
-    },
+    path: 'legal',
+    children: [
+      {
+        path: 'imprint',
+        component: ImprintPageComponent,
+        title: 'Spectra - Imprint',
+      },
+      {
+        path: 'privacy-policy',
+        loadComponent: () =>
+          import('./pages/legal/privacy-policy-page/privacy-policy-page.component').then(
+            (m) => m.PrivacyPolicyPageComponent,
+          ),
+        title: 'Spectra - Privacy Policy',
+      },
+      {
+        path: 'terms-of-service',
+        loadComponent: () =>
+          import('./pages/legal/terms-of-service-page/terms-of-service-page.component').then(
+            (m) => m.TermsOfServicePageComponent,
+          ),
+        title: 'Spectra - Terms of Service',
+      },
+      {
+        path: 'acceptable-use',
+        loadComponent: () =>
+          import('./pages/legal/acceptable-use-page/acceptable-use-page.component').then(
+            (m) => m.AcceptableUsePageComponent,
+          ),
+        title: 'Spectra - Acceptable Use Policy',
+      },
+    ],
   },
 ];
